@@ -18,3 +18,55 @@ When you save the notebook, an HTML file containing the code and output will be 
 The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
 
 
+#Rebel Governance Data: Huang 2016, Power-Sharing (PS) Manually entered
+#PS data comes from two different datasets which are not available online (Mukherjee 2006; Hartzell and Hoddie 2003).  I added it manually to the RGD before uploading the data, because power-sharing is one of my main variables.  There are only a small number of cases where it applies, so I used the lists of power-sharing countries from both articles to add a binary 0/1 for PS.  
+library(readxl)
+RgdPs <- read_excel("RgdPs.xlsx")
+View(RgdPs)
+
+#Freedom House Data
+#from Amanda Edgewell, Univ. of Florida, who has an online Excel version of FH scores with inverted Political Rights and Civil Liberties meaures.
+FH <- read_excel("Editedfhrankings1973to2018.xlsx")
+View(FH)
+
+#renaming country codes to merge 
+library(tidyverse)
+
+colnames(FH)[colnames(FH)=="ccode"] <- "cowccode"
+
+#Merging Rebel Data and FH by both year and code
+RghFh <- merge(RgdPs, FH, by=c("year", "cowccode"))
+
+#this returned an error, so I checked for missing values
+#update: I found no missing values in the columns I am trying to merge
+
+sum(is.na (RgdPs$year)) 
+sum(is.na (FH$year))
+sum(is.na (RgdPs$cowccode))
+sum(is.na (FH$cowccode))
+
+?merge
+
+#Update: I found a typo in the code and corrected it.  The error was because the
+#code read: RghFh <- merge(RgdPs, FH, by-c("year", "cowccode"))
+
+
+#Looking the data over to check for total observations, obvious errors
+view(RghFh)
+
+#The protest data was in the dataset where I added the power-sharing variable, 
+#but to be thorough, I wanted to write out the code I would have used if I
+#needed it in here
+
+#Mass Mobilization Dataset
+
+
+
+
+
+
+
+
+
+
+

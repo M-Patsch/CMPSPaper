@@ -16,3 +16,31 @@ Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by press
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
 
 The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+#Plots and Graphs for Presentation
+
+library(readxl)
+RgdMmFhCorrected <- read_excel("CMPSPaper/RgdMmFhCorrected.xlsx")
+View(RgdMmFhCorrected)
+
+install.packages("MASS")
+library("MASS")
+library(ggplot2)
+
+GovernHist <- hist(RgdMmFhCorrected$govern,
+              main="Histogram for Governance Institutions" ,
+              xlab="Number of Institutions" ,
+              border="light blue" ,
+              col="blue") 
+              
+
+library(mfx)
+
+m1 <- negbinmfx(data = RgdMmFhCorrected, protest1 ~ pshare + govern2 + govwin + rebwin + settle + coup + cl + pr + t + t2 + t3, clustervar1 = "region")
+summary(m1$fit)
+
+
+m2 <- negbinmfx(data = RgdMmFhCorrected, protest1 ~ pshare*elect + govern2 + govwin + rebwin + settle + coup + cl + pr + t + t2 + t3, clustervar1 = "region")
+summary(m2$fit)
+
+
