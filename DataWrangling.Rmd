@@ -59,11 +59,28 @@ view(RghFh)
 #needed it in here
 
 #Mass Mobilization Dataset
+MM <- read_excel("MM.xlsx")
+View(MM)
 
+#This data needs to be collapsed by country year so that it can be merged with the other data
 
+library(dplyr)
+MM2 <- MM %>% group_by(country, year, ccode) %>%
+      summarize(protest = sum(protest))
+view(MM2)
 
+#I would then merge with the Rebel data, which I will list here as the one
+# above.  This is for the sake of simplicity, I don't want to add another
+#dataset to my repo that I don't use (but I still want to show the steps)
 
+# RgdMM <- merge(Rgd, MM, by=c("year", "ccode"))
 
+#The MM has data for more countried than I need, so I want to drop variables
+#without civil wars
+
+?drop_na
+
+# RgdMM %>% drop_na(civwar)
 
 
 
