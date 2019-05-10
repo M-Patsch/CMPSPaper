@@ -23,7 +23,7 @@ keywords: "rebels, power-sharing, post-conflict, protest "
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 fontsize: 11pt
 spacing: single
-bibliography: \dummy{`r file.path(getwd(), list.files(getwd(), "bib$"))`}
+bibliography: \dummy {`r file.path(getwd(), list.files(getwd(), "CMPSref"))`}
 biblio-style: apsr
 citecolor: black
 linkcolor: black
@@ -45,7 +45,7 @@ Megan Patsch
 
 	
 Introduction
-	As civil conflicts approach peaceful resolution, rebel groups are frequently offered power-sharing agreements which utilize democratic principles to alleviate grievances.  Rebel organizations, as a result, are given the opportunity to transition into political life.  Despite the appealingly liberal provisions in power-sharing, these agreements often fail to promote peace (Mukherjee 2006).  Success of power-sharing has been measured in the literature in terms of civil war recurrence, but this approach leaves significant uncertainty about lower-level activity in post-war states.  The amount of support that power-sharing governments have, the kind of opposition they face, or even the willingness for former rebels and non-rebel citizens to accept these new governments has been largely unexplored.  
+	As civil conflicts approach peaceful resolution, rebel groups are frequently offered power-sharing agreements which utilize democratic principles to alleviate grievances.  Rebel organizations, as a result, are given the opportunity to transition into political life.  Despite the appealingly liberal provisions in power-sharing, these agreements often fail to promote peace [@mukherjee_why_2006].  Success of power-sharing has been measured in the literature in terms of civil war recurrence, but this approach leaves significant uncertainty about lower-level activity in post-war states.  The amount of support that power-sharing governments have, the kind of opposition they face, or even the willingness for former rebels and non-rebel citizens to accept these new governments has been largely unexplored.  
 	Power-sharing governments rule over not only former rebels and their supporters, but also the wider population of the state.  In some cases, rebel groups have high levels of perceived legitimacy and governing experience from their wartime efforts.  In others, they do not.  Some groups ran extensive healthcare services, collected taxes, and held elections for leadership positions, but others were limited to military goals alone (Terpstra and Frerks 2017).  Do these differences affect post-conflict society?  In this paper, I address this question by exploring the relationship between power-sharing governments and anti-government protests.  
 Rebel Groups
 	Research on rebel groups and rebel movements has historically treated all groups as similar to one another.  However, recent literature has been exploring a more nuanced view of such organizations (See Huang 2016, Steward 2018, Terpstra and Frerks 2017).  Older research tended to view rebel groups as highly hierarchical, predominantly militant, and somewhat one-dimensional.  The expectation was that these groups existed to use violence against the state to achieve a set of goals.  But this is an overly narrow view of such groups, which has limited our ability to understand their transition into post-conflict politics.  New research has insightfully added dimension and highlighted important differences between rebel groups which may have critical implications in the post-war period.
