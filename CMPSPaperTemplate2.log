@@ -1,0 +1,644 @@
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.5.10)  10 MAY 2019 23:31
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**CMPSPaperTemplate2.tex
+(./CMPSPaperTemplate2.tex
+LaTeX2e <2018-12-01>
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.
+sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.st
+y
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/ifpdf.s
+ty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/ifvtex.
+sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ifxetex/ifxetex.
+sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+) (c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 105.
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)) (c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/inputenc.s
+ty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+)
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/abstract/abstract.
+sty
+Package: abstract 2009/06/08 v1.2a configurable abstracts
+\abstitleskip=\skip43
+\absleftindent=\skip44
+\absrightindent=\skip45
+\absparindent=\skip46
+\absparsep=\skip47
+)
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.
+sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.
+sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graph
+ics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 99.
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex
+.def
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/oberdiek/grffile.s
+ty
+Package: grffile 2017/06/30 v1.18 Extended file name support for graphics (HO)
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/oberdiek/kvoptions
+.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/ltxcmds
+.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/kvsetke
+ys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/infware
+rr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/etexcmd
+s.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/ifluate
+x.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/pdftexc
+mds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+Package grffile Info: Option `multidot' is set to `true'.
+Package grffile Info: Option `extendedchars' is set to `false'.
+Package grffile Info: Option `space' is set to `true'.
+Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 494.
+)
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.
+sty
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box27
+\beforetitleunit=\skip48
+\aftertitleunit=\skip49
+\ttl@plus=\dimen113
+\ttl@minus=\dimen114
+\ttl@toksa=\toks18
+\titlewidth=\dimen115
+\titlewidthlast=\dimen116
+\titlewidthfirst=\dimen117
+) (c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/natbib/natbib.st
+y
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip50
+\bibsep=\skip51
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count91
+)
+\c@hypothesis=\count92
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/setspace/setspace.
+sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.
+sty
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/hobsub-
+hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/hobsub-
+generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/oberdiek/auxhook.s
+ty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen118
+\Hy@linkcounter=\count93
+\Hy@pagecounter=\count94
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.de
+f
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count95
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/hyperr
+ef.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `setpagesize' set `false' on input line 4393.
+Package hyperref Info: Option `unicode' set `false' on input line 4393.
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count96
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5125.
+\XeTeXLinkMargin=\dimen119
+\Fld@menulength=\count97
+\Field@Width=\dimen120
+\Fld@charsize=\dimen121
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring OFF on input line 6400.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count98
+\c@Item=\count99
+\c@Hfootnote=\count100
+)
+Package hyperref Info: Driver: hxetex.
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.de
+f
+File: hxetex.def 2018/11/30 v6.88e Hyperref driver for XeTeX
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
+)
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/stringe
+nc.sty
+Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box28
+\c@Hy@AnnotLevel=\count101
+\HyField@AnnotCount=\count102
+\Fld@listcount=\count103
+\c@bookmark@seq@number=\count104
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/oberdiek/rerunfile
+check.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip52
+)
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color
+.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: xetex.def on input line 147.
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam.
+def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+Package hyperref Info: Option `breaklinks' set `true' on input line 107.
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/se-asci
+i-print.def
+File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
+
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 107.
+No file CMPSPaperTemplate2.aux.
+\openout1 = `CMPSPaperTemplate2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box29
+Package hyperref Info: Link coloring ON on input line 121.
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.s
+ty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(c:/Users/Megan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/gettitl
+estring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count105
+)
+LaTeX Info: Redefining \ref on input line 121.
+LaTeX Info: Redefining \pageref on input line 121.
+LaTeX Info: Redefining \nameref on input line 121.
+\@outlinefile=\write3
+\openout3 = `CMPSPaperTemplate2.out'.
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+LaTeX Font Info:    Try loading font information for T1+phv on input line 137.
+LaTeX Font Info:    No file T1phv.fd. on input line 137.
+
+LaTeX Font Warning: Font shape `T1/phv/bx/n' undefined
+(Font)              using `T1/cmr/m/n' instead on input line 137.
+
+
+Package natbib Warning: Citation `hartzell_institutionalizing_2008' on page 1 u
+ndefined on input line 158.
+
+
+Package natbib Warning: Citation `stewart_civil_2018' on page 1 undefined on in
+put line 166.
+
+
+Package natbib Warning: Citation `terpstra_rebel_2017' on page 1 undefined on i
+nput line 167.
+
+
+Package natbib Warning: Citation `mukherjee_why_2006' on page 1 undefined on in
+put line 193.
+
+
+Package natbib Warning: Citation `terpstra_rebel_2017' on page 1 undefined on i
+nput line 207.
+
+
+Package natbib Warning: Citation `huang_wartime_2016' on page 1 undefined on in
+put line 217.
+
+
+Package natbib Warning: Citation `stewart_civil_2016' on page 1 undefined on in
+put line 217.
+
+
+Package natbib Warning: Citation `terpstra_rebel_2017' on page 1 undefined on i
+nput line 218.
+
+[1
+
+]
+
+Package natbib Warning: Citation `huang_wartime_2016' on page 2 undefined on in
+put line 236.
+
+
+Package natbib Warning: Citation `stewart_civil_2018' on page 2 undefined on in
+put line 242.
+
+
+Package natbib Warning: Citation `berman_religion_2008' on page 2 undefined on 
+input line 247.
+
+
+Package natbib Warning: Citation `terpstra_rebel_2017' on page 2 undefined on i
+nput line 255.
+
+
+Package natbib Warning: Citation `terpstra_rebel_2017' on page 2 undefined on i
+nput line 263.
+
+
+Package natbib Warning: Citation `ottmann_power-sharing_201' on page 2 undefine
+d on input line 269.
+
+
+Package natbib Warning: Citation `mukherjee_why_2006' on page 2 undefined on in
+put line 275.
+
+
+Package natbib Warning: Citation `hartzell_institutionalizing_2008' on page 2 u
+ndefined on input line 287.
+
+
+Package natbib Warning: Citation `hartzell_institutionalizing_2008' on page 2 u
+ndefined on input line 300.
+
+[2]
+
+Package natbib Warning: Citation `wang_political_nodate' on page 3 undefined on
+ input line 306.
+
+
+Package natbib Warning: Citation `jarstad_war_2008' on page 3 undefined on inpu
+t line 310.
+
+
+Package natbib Warning: Citation `shifter_will_2016' on page 3 undefined on inp
+ut line 321.
+
+
+Package natbib Warning: Citation `katkov_colombias_2016' on page 3 undefined on
+ input line 323.
+
+
+Package natbib Warning: Citation `huang_wartime_2016' on page 3 undefined on in
+put line 344.
+
+
+Package natbib Warning: Citation `keels_oil_nodate' on page 3 undefined on inpu
+t line 364.
+
+
+Package natbib Warning: Citation `letsa_voting_2017' on page 3 undefined on inp
+ut line 368.
+
+[3]
+
+Package natbib Warning: Citation `tarrow_power_2011' on page 4 undefined on inp
+ut line 393.
+
+
+Package natbib Warning: Citation `tarrow_power_2011' on page 4 undefined on inp
+ut line 398.
+
+
+Package natbib Warning: Citation `wiegink_former_2015' on page 4 undefined on i
+nput line 411.
+
+
+Package natbib Warning: Citation `katkov_colombias_2016' on page 4 undefined on
+ input line 428.
+
+[4]
+
+Package natbib Warning: Citation `clark_mass_2016' on page 5 undefined on input
+ line 482.
+
+[5]
+
+Package natbib Warning: Citation `hartzell_institutionalizing_2008' on page 6 u
+ndefined on input line 512.
+
+
+Package natbib Warning: Citation `mukherjee_why_2006' on page 6 undefined on in
+put line 513.
+
+
+Package natbib Warning: Citation `huang_wartime_2016' on page 6 undefined on in
+put line 523.
+
+
+Package natbib Warning: Citation `huang_wartime_2016' on page 6 undefined on in
+put line 533.
+
+File: CMPSPaperTemplate2_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file 
+(type pdf)
+<use CMPSPaperTemplate2_files/figure-latex/unnamed-chunk-2-1.pdf>
+
+Overfull \hbox (17.99884pt too wide) in paragraph at lines 537--538
+[][] 
+ []
+
+[6]
+
+Package natbib Warning: Citation `huang_wartime_2016' on page 7 undefined on in
+put line 542.
+
+File: CMPSPaperTemplate2_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file 
+(type pdf)
+<use CMPSPaperTemplate2_files/figure-latex/unnamed-chunk-3-1.pdf>
+
+Overfull \hbox (17.99884pt too wide) in paragraph at lines 564--565
+[][] 
+ []
+
+[7]
+
+Package natbib Warning: Citation `hartzell_institutionalizing_2008' on page 8 u
+ndefined on input line 584.
+
+File: CMPSPaperTemplate2_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file 
+(type pdf)
+<use CMPSPaperTemplate2_files/figure-latex/unnamed-chunk-4-1.pdf>
+
+Overfull \hbox (17.99884pt too wide) in paragraph at lines 597--598
+[][] 
+ []
+
+[8] [9] [10]
+No file CMPSPaperTemplate2.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 642.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 642.
+(./CMPSPaperTemplate2.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 642.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 642.
+
+Package rerunfilecheck Warning: File `CMPSPaperTemplate2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `CMPSPaperTemplate2.out':
+(rerunfilecheck)             Before: 
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E.
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 642.
+ ) 
+Here is how much of TeX's memory you used:
+ 9497 strings out of 494921
+ 136676 string characters out of 6176112
+ 215860 words of memory out of 5000000
+ 13335 multiletter control sequences out of 15000+600000
+ 29574 words of font info for 24 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 36i,6n,30p,282b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on CMPSPaperTemplate2.pdf (10 pages).

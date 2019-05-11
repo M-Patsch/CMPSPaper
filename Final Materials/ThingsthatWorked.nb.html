@@ -1733,7 +1733,7 @@ $(document).ready(function () {
 </style>
 <script>
 $(document).ready(function () {
-  window.initializeSourceEmbed("Plots.Rmd");
+  window.initializeSourceEmbed("ThingsthatWorked.Rmd");
   window.initializeCodeFolding("show" === "show");
 });
 </script>
@@ -1775,25 +1775,16 @@ $(document).ready(function () {
 <p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the toolbar or by pressing <em>Ctrl+Alt+I</em>.</p>
 <p>When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the <em>Preview</em> button or press <em>Ctrl+Shift+K</em> to preview the HTML file).</p>
 <p>The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike <em>Knit</em>, <em>Preview</em> does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.</p>
-<p>library(readxl) RgdMmFhCorrected &lt;- read_excel(“Final Materials/RgdMmFhCorrected.xlsx”) View(RgdMmFhCorrected) install.packages(“MASS”) library(“MASS”) library(ggplot2)</p>
+<p>#Plots and Graphs for Presentation</p>
+<p>library(readxl) RgdMmFhCorrected &lt;- read_excel(“CMPSPaper/RgdMmFhCorrected.xlsx”) View(RgdMmFhCorrected)</p>
+<p>install.packages(“MASS”) library(“MASS”) library(ggplot2)</p>
 <p>GovernHist &lt;- hist(RgdMmFhCorrected$govern, main=“Histogram for Governance Institutions” , xlab=“Number of Institutions” , border=“light blue” , col=“blue”)</p>
-<div id="this-does-not-work" class="section level1">
-<h1>This does not work:</h1>
-<pre><code>ProtestsTime &lt;- RgdMmFhCorrected %&gt;%
-data(RgdMmFhCorrected, package=&quot;ggplot2&quot;)
-RgdMmFh &lt;- data.frame(RgdMmFhCorrected)
-ggplot(RghMmFh) + geom_line(aes(x=year, y=protest1, color=&quot;pcs&quot;)) +
-    scale_color_discrete(name=&quot;Legend&quot;) + labs(title=&quot;Protests by Year&quot;)
-    
-    </code></pre>
-<p>PowerSharing &lt;- ggplot(RgdMmFhCorrected$pshare, aes(x=pshare)) + geom_bar() +labs(title=“Power-Sharing”)</p>
-<p>Protests &lt;- ggplot</p>
-<p>Nbreg &lt;- glm.nb(formula = Response ~ Trt, data = RgdMmFhCorrected, )</p>
-<p>relabel_predictors(c(pshare = “Power-Sharing, govern2 =”Rebel Governance Score“, govwin =”Government Victory“, rebwin =”Rebel Victory“, settle =”Settlement“, coup =”Coup“, cl =”Civil Liberties“, pr =”Political Rights&quot;))</p>
+<p>library(mfx)</p>
+<p>m1 &lt;- negbinmfx(data = RgdMmFhCorrected, protest1 ~ pshare + govern2 + govwin + rebwin + settle + coup + cl + pr + t + t2 + t3, clustervar1 = “region”) summary(m1$fit)</p>
+<p>m2 &lt;- negbinmfx(data = RgdMmFhCorrected, protest1 ~ pshare*elect + govern2 + govwin + rebwin + settle + coup + cl + pr + t + t2 + t3, clustervar1 = “region”) summary(m2$fit)</p>
 <!-- rnb-text-end -->
-</div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiANCg0KVHJ5IGV4ZWN1dGluZyB0aGlzIGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqUnVuKiBidXR0b24gd2l0aGluIHRoZSBjaHVuayBvciBieSBwbGFjaW5nIHlvdXIgY3Vyc29yIGluc2lkZSBpdCBhbmQgcHJlc3NpbmcgKkN0cmwrU2hpZnQrRW50ZXIqLiANCg0KYGBge3J9DQpwbG90KGNhcnMpDQpgYGANCg0KQWRkIGEgbmV3IGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqSW5zZXJ0IENodW5rKiBidXR0b24gb24gdGhlIHRvb2xiYXIgb3IgYnkgcHJlc3NpbmcgKkN0cmwrQWx0K0kqLg0KDQpXaGVuIHlvdSBzYXZlIHRoZSBub3RlYm9vaywgYW4gSFRNTCBmaWxlIGNvbnRhaW5pbmcgdGhlIGNvZGUgYW5kIG91dHB1dCB3aWxsIGJlIHNhdmVkIGFsb25nc2lkZSBpdCAoY2xpY2sgdGhlICpQcmV2aWV3KiBidXR0b24gb3IgcHJlc3MgKkN0cmwrU2hpZnQrSyogdG8gcHJldmlldyB0aGUgSFRNTCBmaWxlKS4NCg0KVGhlIHByZXZpZXcgc2hvd3MgeW91IGEgcmVuZGVyZWQgSFRNTCBjb3B5IG9mIHRoZSBjb250ZW50cyBvZiB0aGUgZWRpdG9yLiBDb25zZXF1ZW50bHksIHVubGlrZSAqS25pdCosICpQcmV2aWV3KiBkb2VzIG5vdCBydW4gYW55IFIgY29kZSBjaHVua3MuIEluc3RlYWQsIHRoZSBvdXRwdXQgb2YgdGhlIGNodW5rIHdoZW4gaXQgd2FzIGxhc3QgcnVuIGluIHRoZSBlZGl0b3IgaXMgZGlzcGxheWVkLg0KDQoNCg0KbGlicmFyeShyZWFkeGwpDQpSZ2RNbUZoQ29ycmVjdGVkIDwtIHJlYWRfZXhjZWwoIkZpbmFsIE1hdGVyaWFscy9SZ2RNbUZoQ29ycmVjdGVkLnhsc3giKQ0KVmlldyhSZ2RNbUZoQ29ycmVjdGVkKQ0KaW5zdGFsbC5wYWNrYWdlcygiTUFTUyIpDQpsaWJyYXJ5KCJNQVNTIikNCmxpYnJhcnkoZ2dwbG90MikNCg0KDQoNCkdvdmVybkhpc3QgPC0gaGlzdChSZ2RNbUZoQ29ycmVjdGVkJGdvdmVybiwNCiAgICAgICAgICAgICAgbWFpbj0iSGlzdG9ncmFtIGZvciBHb3Zlcm5hbmNlIEluc3RpdHV0aW9ucyIgLA0KICAgICAgICAgICAgICB4bGFiPSJOdW1iZXIgb2YgSW5zdGl0dXRpb25zIiAsDQogICAgICAgICAgICAgIGJvcmRlcj0ibGlnaHQgYmx1ZSIgLA0KICAgICAgICAgICAgICBjb2w9ImJsdWUiKSANCiAgDQojIFRoaXMgZG9lcyBub3Qgd29yazogDQogICAgUHJvdGVzdHNUaW1lIDwtIFJnZE1tRmhDb3JyZWN0ZWQgJT4lDQogICAgZGF0YShSZ2RNbUZoQ29ycmVjdGVkLCBwYWNrYWdlPSJnZ3Bsb3QyIikNCiAgICBSZ2RNbUZoIDwtIGRhdGEuZnJhbWUoUmdkTW1GaENvcnJlY3RlZCkNCiAgICBnZ3Bsb3QoUmdoTW1GaCkgKyBnZW9tX2xpbmUoYWVzKHg9eWVhciwgeT1wcm90ZXN0MSwgY29sb3I9InBjcyIpKSArDQogICAgICAgIHNjYWxlX2NvbG9yX2Rpc2NyZXRlKG5hbWU9IkxlZ2VuZCIpICsgbGFicyh0aXRsZT0iUHJvdGVzdHMgYnkgWWVhciIpDQogICAgICAgIA0KICAgICAgICANClBvd2VyU2hhcmluZyA8LSBnZ3Bsb3QoUmdkTW1GaENvcnJlY3RlZCRwc2hhcmUsIGFlcyh4PXBzaGFyZSkpICsgZ2VvbV9iYXIoKSArbGFicyh0aXRsZT0iUG93ZXItU2hhcmluZyIpDQoNCg0KDQpQcm90ZXN0cyA8LSBnZ3Bsb3QNCg0KTmJyZWcgPC0gZ2xtLm5iKGZvcm11bGEgPSBSZXNwb25zZSB+IFRydCwgZGF0YSA9IFJnZE1tRmhDb3JyZWN0ZWQsIA0KICAgICAgKQ0KDQoNCnJlbGFiZWxfcHJlZGljdG9ycyhjKHBzaGFyZSA9ICJQb3dlci1TaGFyaW5nLA0KICAgICAgICAgICAgICAgICAgICAgIGdvdmVybjIgPSAiUmViZWwgR292ZXJuYW5jZSBTY29yZSIsIA0KICAgICAgICAgICAgICAgICAgICAgIGdvdndpbiA9ICJHb3Zlcm5tZW50IFZpY3RvcnkiLA0KICAgICAgICAgICAgICAgICAgICAgIHJlYndpbiA9ICJSZWJlbCBWaWN0b3J5IiwgDQogICAgICAgICAgICAgICAgICAgICAgc2V0dGxlID0gIlNldHRsZW1lbnQiLCANCiAgICAgICAgICAgICAgICAgICAgICBjb3VwID0gIkNvdXAiLCANCiAgICAgICAgICAgICAgICAgICAgICBjbCA9ICJDaXZpbCBMaWJlcnRpZXMiLA0KICAgICAgICAgICAgICAgICAgICAgIHByID0gIlBvbGl0aWNhbCBSaWdodHMiKSkNCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiANCg0KVHJ5IGV4ZWN1dGluZyB0aGlzIGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqUnVuKiBidXR0b24gd2l0aGluIHRoZSBjaHVuayBvciBieSBwbGFjaW5nIHlvdXIgY3Vyc29yIGluc2lkZSBpdCBhbmQgcHJlc3NpbmcgKkN0cmwrU2hpZnQrRW50ZXIqLiANCg0KYGBge3J9DQpwbG90KGNhcnMpDQpgYGANCg0KQWRkIGEgbmV3IGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqSW5zZXJ0IENodW5rKiBidXR0b24gb24gdGhlIHRvb2xiYXIgb3IgYnkgcHJlc3NpbmcgKkN0cmwrQWx0K0kqLg0KDQpXaGVuIHlvdSBzYXZlIHRoZSBub3RlYm9vaywgYW4gSFRNTCBmaWxlIGNvbnRhaW5pbmcgdGhlIGNvZGUgYW5kIG91dHB1dCB3aWxsIGJlIHNhdmVkIGFsb25nc2lkZSBpdCAoY2xpY2sgdGhlICpQcmV2aWV3KiBidXR0b24gb3IgcHJlc3MgKkN0cmwrU2hpZnQrSyogdG8gcHJldmlldyB0aGUgSFRNTCBmaWxlKS4NCg0KVGhlIHByZXZpZXcgc2hvd3MgeW91IGEgcmVuZGVyZWQgSFRNTCBjb3B5IG9mIHRoZSBjb250ZW50cyBvZiB0aGUgZWRpdG9yLiBDb25zZXF1ZW50bHksIHVubGlrZSAqS25pdCosICpQcmV2aWV3KiBkb2VzIG5vdCBydW4gYW55IFIgY29kZSBjaHVua3MuIEluc3RlYWQsIHRoZSBvdXRwdXQgb2YgdGhlIGNodW5rIHdoZW4gaXQgd2FzIGxhc3QgcnVuIGluIHRoZSBlZGl0b3IgaXMgZGlzcGxheWVkLg0KDQojUGxvdHMgYW5kIEdyYXBocyBmb3IgUHJlc2VudGF0aW9uDQoNCmxpYnJhcnkocmVhZHhsKQ0KUmdkTW1GaENvcnJlY3RlZCA8LSByZWFkX2V4Y2VsKCJDTVBTUGFwZXIvUmdkTW1GaENvcnJlY3RlZC54bHN4IikNClZpZXcoUmdkTW1GaENvcnJlY3RlZCkNCg0KaW5zdGFsbC5wYWNrYWdlcygiTUFTUyIpDQpsaWJyYXJ5KCJNQVNTIikNCmxpYnJhcnkoZ2dwbG90MikNCg0KR292ZXJuSGlzdCA8LSBoaXN0KFJnZE1tRmhDb3JyZWN0ZWQkZ292ZXJuLA0KICAgICAgICAgICAgICBtYWluPSJIaXN0b2dyYW0gZm9yIEdvdmVybmFuY2UgSW5zdGl0dXRpb25zIiAsDQogICAgICAgICAgICAgIHhsYWI9Ik51bWJlciBvZiBJbnN0aXR1dGlvbnMiICwNCiAgICAgICAgICAgICAgYm9yZGVyPSJsaWdodCBibHVlIiAsDQogICAgICAgICAgICAgIGNvbD0iYmx1ZSIpIA0KICAgICAgICAgICAgICANCg0KbGlicmFyeShtZngpDQoNCm0xIDwtIG5lZ2Jpbm1meChkYXRhID0gUmdkTW1GaENvcnJlY3RlZCwgcHJvdGVzdDEgfiBwc2hhcmUgKyBnb3Zlcm4yICsgZ292d2luICsgcmVid2luICsgc2V0dGxlICsgY291cCArIGNsICsgcHIgKyB0ICsgdDIgKyB0MywgY2x1c3RlcnZhcjEgPSAicmVnaW9uIikNCnN1bW1hcnkobTEkZml0KQ0KDQoNCm0yIDwtIG5lZ2Jpbm1meChkYXRhID0gUmdkTW1GaENvcnJlY3RlZCwgcHJvdGVzdDEgfiBwc2hhcmUqZWxlY3QgKyBnb3Zlcm4yICsgZ292d2luICsgcmVid2luICsgc2V0dGxlICsgY291cCArIGNsICsgcHIgKyB0ICsgdDIgKyB0MywgY2x1c3RlcnZhcjEgPSAicmVnaW9uIikNCnN1bW1hcnkobTIkZml0KQ0KDQoNCg==</div>
 
 
 

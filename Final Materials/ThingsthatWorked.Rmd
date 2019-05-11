@@ -17,46 +17,30 @@ When you save the notebook, an HTML file containing the code and output will be 
 
 The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
 
-
+#Plots and Graphs for Presentation
 
 library(readxl)
-RgdMmFhCorrected <- read_excel("Final Materials/RgdMmFhCorrected.xlsx")
+RgdMmFhCorrected <- read_excel("CMPSPaper/RgdMmFhCorrected.xlsx")
 View(RgdMmFhCorrected)
+
 install.packages("MASS")
 library("MASS")
 library(ggplot2)
-
-
 
 GovernHist <- hist(RgdMmFhCorrected$govern,
               main="Histogram for Governance Institutions" ,
               xlab="Number of Institutions" ,
               border="light blue" ,
               col="blue") 
-  
-# This does not work: 
-    ProtestsTime <- RgdMmFhCorrected %>%
-    data(RgdMmFhCorrected, package="ggplot2")
-    RgdMmFh <- data.frame(RgdMmFhCorrected)
-    ggplot(RghMmFh) + geom_line(aes(x=year, y=protest1, color="pcs")) +
-        scale_color_discrete(name="Legend") + labs(title="Protests by Year")
-        
-        
-PowerSharing <- ggplot(RgdMmFhCorrected$pshare, aes(x=pshare)) + geom_bar() +labs(title="Power-Sharing")
+              
+
+library(mfx)
+
+m1 <- negbinmfx(data = RgdMmFhCorrected, protest1 ~ pshare + govern2 + govwin + rebwin + settle + coup + cl + pr + t + t2 + t3, clustervar1 = "region")
+summary(m1$fit)
 
 
-
-Protests <- ggplot
-
-Nbreg <- glm.nb(formula = Response ~ Trt, data = RgdMmFhCorrected, 
-      )
+m2 <- negbinmfx(data = RgdMmFhCorrected, protest1 ~ pshare*elect + govern2 + govwin + rebwin + settle + coup + cl + pr + t + t2 + t3, clustervar1 = "region")
+summary(m2$fit)
 
 
-relabel_predictors(c(pshare = "Power-Sharing,
-                      govern2 = "Rebel Governance Score", 
-                      govwin = "Government Victory",
-                      rebwin = "Rebel Victory", 
-                      settle = "Settlement", 
-                      coup = "Coup", 
-                      cl = "Civil Liberties",
-                      pr = "Political Rights"))
